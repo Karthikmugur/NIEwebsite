@@ -1,0 +1,18 @@
+.StaffMain{
+    padding: 20px;
+}
+.DateText{
+    font-size: 15px;
+}
+@media screen and (max-width: 500px){
+    .DateText{
+        font-size: 10px;
+    }
+    .StaffMain{
+     padding: 7px;
+     font-size: 12px;
+    }
+    .table{
+        display: none;
+    }
+}

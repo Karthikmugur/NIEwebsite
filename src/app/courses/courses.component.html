@@ -1,0 +1,28 @@
+<div class="CourseMain">
+    <div class="col-12 text-end DateText"><b><i>{{Data.currentDate}}</i></b></div>
+    <hr>
+    <table class="table">
+        <thead>
+            <tr>
+            <th>Sl. No.</th>
+            <th>Courses</th>
+            <th>Intake</th>
+            <th>Govt. Seats</th>
+            <th>Fees</th>
+            <th>Fees for International Students</th>
+            <th>Start Date </th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr [ngClass]="i % 2 == 0 ? 'bg-secondary':''" *ngFor="let item of CourseDetails; let i = index">
+                <td data-label="Sl. No.">{{(i + 1)}}</td>
+                <td data-label="Course">{{item.Course}}</td>
+                <td data-label="Intake">{{item.Intake | number:'0.2'}}</td>
+                <td data-label="Govt. Seats">{{item.GovtSeats}}</td>
+                <td data-label="Fees">{{item.Fees | currency:'INR'}}</td>
+                <td data-label="Int. Stu. Fees">{{item.InternationalStudentsFees | currency}}</td>
+                <td data-label="Start Date">{{item.StartDate | date:'dd.MM.yyyy'}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

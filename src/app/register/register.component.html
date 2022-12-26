@@ -1,0 +1,25 @@
+<div class="col-12 float-start d-flex justify-content-center RegisterMain">
+<form class="col-6 float-start FormStyles" [formGroup]="signUpForm" (ngSubmit)="onSubmission()">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" formControlName="email">
+      <div *ngIf="signUpForm.get('email')?.invalid && signUpForm.get('email')?.touched" class="form-text text-danger">Please enter a valid email id.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" name="password" formControlName="password">
+      <div *ngIf="signUpForm.get('password')?.invalid && signUpForm.get('password')?.touched" class="form-text text-danger">Please enter a valid password.</div>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputMobile" class="form-label">Mobile</label>
+        <input type="number" class="form-control" id="exampleInputMobile" name="mobile" formControlName="mobile">
+        <div *ngIf="signUpForm.get('mobile')?.invalid && signUpForm.get('mobile')?.touched" class="form-text text-danger">Please enter a valid mobile number.</div>  
+    </div>
+      <div class="mb-3">
+        <label for="exampleInputDate" class="form-label">Date of Birth</label>
+        <input type="date" class="form-control" id="exampleInputDate" name="dob" formControlName="dob">
+        <div *ngIf="signUpForm.get('dob')?.invalid && signUpForm.get('dob')?.touched" class="form-text text-danger">Please enter a valid DOB.</div>  
+    </div>
+    <button [disabled]="signUpForm.invalid" type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>

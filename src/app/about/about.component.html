@@ -1,0 +1,31 @@
+<div class="col-12 AboutMain">
+    <div class="col-12 text-end DateText"><b><i>{{Data.currentDate}}</i></b></div>
+    <hr>
+    <p>NIE was started in 1946 with diploma programs in Civil Engineering in a room under a thatched roof in
+        Lakshmipuram. The first batch consisted of 86 students. Later, the classes were held in a shed in the nearby
+        Sharada Vilas High School campus, in Mysore. S. Ramaswamy, D. V. Narasimha Rao and T. Ramarao ("Tunnel"
+        Ramarao), the founders, established NIE by 1950 with its own class rooms and workshops on a 6-acre (24,000 m2)
+        campus. NIE started AMIE courses in Civil Engineering for intermediate-passed students in 1948. The students
+        were permitted to change over to the regular degree course leading to B.E. degree in Civil Engineering of the
+        University of Mysore. Thus, NIE became the second engineering college in the state of Karnataka and the first in
+        Mysore. The first batch of students in Civil Engineering graduated in 1953.</p>
+    <p>In 1956, NIE was recognised for development during the second and subsequent five-year plans by the state and the
+        Union governments. In 1958-59, NIE got private-aided institution status under grant-in-aid code of the Karnataka
+        government.</p>
+        <div *ngIf="showMoreContents">
+    <p>A Golden Jubilee Complex was completed in 1996 on a 6-acre (24,000 m2) plot opposite the
+        main building in part of the golden jubilee celebrations. In 2004, the college received World Bank aid under the
+        TEQIP project. The funds obtained were used to strengthen the Centres of Excellence in the college and to set
+        up new ones.</p>
+    <p>In 2007, NIE attained autonomy under Visvesvaraya Technological University. In 2011, NIE received further
+        World Bank aid under the TEQIP-II. These funds were used to augment the postgraduate programs.</p>
+    <p>In March 2019, the government of Karnataka approved a private university status for NIE society through
+        notification of The NIE University Act 2019, and it is set to start NIE University. D.A. Prasanna was
+        designated the founder chancellor.</p>
+    </div>
+    <div class="col-12 float-start text-center">
+        <button class="btn" [ngClass]="showMoreContents ? 'btn-secondary':'btn-primary'" (click)="toggleContents()">
+            {{btnName}}
+        </button>
+    </div>
+</div>

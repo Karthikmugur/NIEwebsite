@@ -1,0 +1,36 @@
+.BoxStyles{
+    text-align: center;
+    background-color: gray;
+    color: white;
+    border-radius: 7px;
+    box-shadow: 0 0 7px gray; 
+}
+.PlacementMain{
+    padding: 10px;
+    height: 100%;
+}
+.BoxMain{
+    padding: 7px;
+    width: 25%;
+}
+.BoxInsideLine{
+    padding: 7px;
+}
+.BoxStyles{
+    padding: 7px;
+}
+@media screen and (max-width: 500px){
+    .PlacementMain{
+        padding: 7px;
+    }
+    .BoxMain{
+        padding: 5px;
+        width: 100%;
+    }
+    .BoxInsideLine{
+        padding: 2px;
+    }
+    .BoxStyles{
+        padding: 4px;
+    }
+}

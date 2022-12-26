@@ -1,0 +1,20 @@
+<div class="col-12 float-start PlacementMain">
+    <div *ngFor="let item of companyDetails, let i = index" class="col-3 float-start BoxMain">
+        <div [ngStyle]="i % 2 == 0 ? {'background':'black'}:{'background':'gray'}" class="col-12 float-start BoxStyles">
+            <img class="w-100" [src]="item.imagePath" height="150" alt="">
+            <hr>
+            <div class="col-12 float-start BoxInsideLine">
+                Company Name: {{item.companyName}}
+            </div>
+            <div class="col-12 float-start BoxInsideLine">
+                Intake: {{item.intake}}
+            </div>
+            <div class="col-12 float-start BoxInsideLine">
+                Package Offered: {{item.package}}
+            </div>
+            <div class="col-12 float-start BoxInsideLine">
+                Location: {{item.location}}
+            </div>
+        </div>
+    </div>
+</div>

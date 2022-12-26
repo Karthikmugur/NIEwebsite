@@ -1,0 +1,30 @@
+.SideNavMain{
+    background-color: lightskyblue;
+    height: 100%;
+    color: white;
+    
+}
+button{
+    width: 100%;
+    background-color: black;
+    color: white;
+    font: 14px;
+    padding: 7px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+button:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+@media screen and (max-width: 500px){
+    .SidenavMain{
+        width: 35%;
+        height: 100%;
+        margin-top: 74px;
+    }
+}

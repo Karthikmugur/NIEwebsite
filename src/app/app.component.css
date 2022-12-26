@@ -1,0 +1,55 @@
+.Mainparent, .SecondRow{
+    width: 100%;
+    height: 100%;
+    float: left;
+    background-color: aquamarine;
+}
+
+.header{
+    width: 100%;
+    float: left;
+    position: fixed;
+    top: 0px;
+    
+}
+
+.Footer{
+    width: 100%;
+    float: left;
+    position: fixed;
+    bottom: 0px;
+    
+}
+
+.Sidenav{
+    width: 20%;
+    float: left;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    margin-top: 65px;
+}
+.Maincontent{
+    width: 80%;
+    float: left;
+    margin-left: 20%;
+    margin-top: 65px;
+    height: auto;
+    padding-bottom: 20px;
+    background-color: aquamarine;
+}
+@media screen and (max-width: 500px){
+    .Sidenav{
+        width: 35%;
+        height: 100%;
+        margin-top: 74px;
+        
+        
+    }
+    .Maincontent{
+        width: 65%;
+        margin-left: 35%;
+        margin-top: 74px;
+        padding-bottom: 40px;
+    }
+}

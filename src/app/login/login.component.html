@@ -1,0 +1,16 @@
+<div class="col-12 float-start d-flex justify-content-center FormMain">
+<form class="col-6 float-start FormStyles" (ngSubmit)="onSubmission(formData)" #formData = ngForm>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" ngModel pattern="[a-z0-9.@]{2,20}" required #email="ngModel">
+      <div *ngIf="email.invalid && email.touched" id="emailHelp" class="form-text text-danger">Please enter a valid email id.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" name="password" ngModel pattern="[a-zA-Z0-9@-_#]{8,12}" required #password="ngModel">
+      <div *ngIf="password.invalid && password.touched" class="form-text text-danger">Please enter a valid password.</div>
+    </div>
+    <div>New user? <a routerLink="/Register"> click here to Register</a></div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>

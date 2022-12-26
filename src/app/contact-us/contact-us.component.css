@@ -1,0 +1,18 @@
+.Name{
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+}
+.ContactMain{
+    padding:20px;
+}
+
+@media screen and (max-width: 500px){
+    .ContactMain{
+        padding: 7px;
+    }
+.Name{
+    font-size: 14px;
+}
+}
+    

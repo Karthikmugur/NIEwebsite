@@ -1,0 +1,25 @@
+.DateText{
+    font-size: 15px;
+}
+.HomeMain{
+    padding: 20px;
+    z-index: -1px;
+}
+.images{
+    height: 470px;
+    z-index: 100px;
+}
+
+
+@media screen and (max-width: 500px){
+    .DateText{
+        font-size: 10px;
+    }
+    .HomeMain{
+     padding: 7px;
+    }
+    .images{
+        height: 220px;
+    }
+    
+}

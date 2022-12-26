@@ -1,0 +1,23 @@
+.FormStyles{
+    background-color: white;
+    color: black;
+    border-radius: 7px;
+    border-radius: 0 0 10px black;
+    padding: 15px;
+}
+input.ng-touched.ng-invalid{
+    border: 1px solid red;
+}
+.FormMain{
+    margin-top: 100px;
+}
+@media screen and (max-width: 500px){
+    .FormStyles{
+        width: 100%;
+    }
+    .FormMain{
+    padding: 14px;
+    margin: 0px;
+}
+   
+}
